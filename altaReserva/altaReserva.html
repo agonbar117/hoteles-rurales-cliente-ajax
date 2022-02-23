@@ -1,0 +1,60 @@
+<fieldset>
+
+<!--
+        ######  RESERVA
+    - id
+    - habitacionAsignada: Habitacion
+    - cliente: Persona
+    - fechaInicio
+    - fechaFin
+    - serviciosAsignados[]
+    - precioTotal
+    -->
+    <!-- Alta Reserva-->
+    <div class="form form-body" id="divAltaReserva">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Añadir Reserva</h3>
+                        <p>Añade una reserva al hotel.</p>
+                        <form class="requires-validation" name="frmAltaReserva" id="frmAltaReserva" novalidate>
+                            <div class="col-md-12">
+                                <label class="pt-3">Asignar Habitacion</label>
+                                <select class="form-select mt-3 selectHabitacion" id="selectHabitacion" name="selectHabitacion" required>
+                                      <option selected value="">Seleccione una habitación</option>
+                                </select>
+                                <div class="valid-feedback">Gracias por seleccionar una habitación</div>
+                                <div class="invalid-feedback">Por favor, seleccione una habitación</div>
+                           </div>
+                           <div class="col-md-12">
+                                <label class="pt-3">Asignar Cliente</label>
+                                <select class="form-select mt-3 selectCliente" id="selectCliente" name="selectCliente" required>
+                                    <option selected value="">Seleccione un cliente</option>
+                                </select>
+                                <div class="valid-feedback">Gracias por seleccionar un cliente</div>
+                                <div class="invalid-feedback">Por favor, seleccione un cliente</div>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="pt-3">Fecha Inicio</label>
+                                <input class="form-control" type="date" id="fechaInicio" name="fechaInicio" value="2018-07-22" min="01-01-2018" max="31-12-2018">
+                                <div class="valid-feedback">La fecha es válida</div>
+                                <div class="invalid-feedback">La fecha no es válida</div>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="pt-3">Fecha Fin</label>
+                                <input class="form-control" type="date" id="fechaFin" name="fechaFin" value="2018-07-27" min="01-01-2018" max="31-12-2018">
+                                <div class="valid-feedback">La fecha es válida</div>
+                                <div class="invalid-feedback">La fecha no es válida</div>
+                            </div>
+                            <div class="form-button mt-3">
+                                <button id="btnAltaReserva" type="button" class="btn btn-primary">Alta Reserva</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</fieldset>

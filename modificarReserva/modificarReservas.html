@@ -1,0 +1,61 @@
+<fieldset>
+    <div class="form form-body" id="divModificarReservas">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Modificar Reservas</h3>
+                        <p>Modifica un reserva.</p>
+                        <form class="requires-validation" name="frmModificarReserva" id="frmModificarReserva" novalidate>
+        
+                            <div class="col-md-12">
+                                <label class="pt-3">Modificar Reserva</label>
+                                <select class="form-select mt-3" id="selectModificarReserva" name="selectModificarReserva" required>
+                                    <option selected value="">Seleccione una Reserva</option>
+                                </select>
+                                <div class="valid-feedback">Gracias por seleccionar una habitación</div>
+                                <div class="invalid-feedback">Por favor seleccione una habitación</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label class="pt-3">Asignar Habitacion</label>
+                                <select class="form-select mt-3 selectHabitacion" id="selectHabitacionReserva" name="selectHabitacionReserva" required>
+                                    <option selected value="">Seleccione una habitación</option>
+                                </select>
+                                <div class="valid-feedback">Gracias por seleccionar una habitación</div>
+                                <div class="invalid-feedback">Por favor, seleccione una habitación</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label class="pt-3">Asignar Cliente</label>
+                                <select class="form-select mt-3 selectCliente" id="selectClienteReserva" name="selectClienteReserva" required>
+                                    <option selected value="">Seleccione un cliente</option>
+                                </select>
+                                <div class="valid-feedback">Gracias por seleccionar un cliente</div>
+                                <div class="invalid-feedback">Por favor, seleccione un cliente</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label class="pt-3">Fecha Inicio</label>
+                                <input class="form-control" type="date" id="fechaInicioModificar" name="fechaInicioModificar" value="2018-07-22" min="01-01-2018" max="31-12-2018">
+                                <div class="valid-feedback">La fecha es válida</div>
+                                <div class="invalid-feedback">La fecha no es válida</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label class="pt-3">Fecha Fin</label>
+                                <input class="form-control" type="date" id="fechaFinModificar" name="fechaFinModificar" value="2018-07-27" min="01-01-2018" max="31-12-2018">
+                                <div class="valid-feedback">La fecha es válida</div>
+                                <div class="invalid-feedback">La fecha no es válida</div>
+                            </div>
+
+                            <div class="form-button mt-3">
+                                <button id="btnModificarReservasHabitacion" type="button" class="btn btn-primary">Modificar reservas</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<fieldset>

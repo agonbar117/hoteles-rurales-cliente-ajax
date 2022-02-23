@@ -1,0 +1,60 @@
+<fieldset> 
+    <div class="form form-body" id="divAltaCliente">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Añadir un Cliente</h3>
+                        <form class="requires-validation" name="frmAltaCliente" id="frmAltaCliente" novalidate>
+                            <div class="col-md-12">
+                                <label class="pt-3">Nombre</label>
+                                <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                                <div class="valid-feedback" id="NombreCorrecto">Nombre correcto</div>
+                                <div class="invalid-feedback" id="NombreIncorrecto">El nombre esta mal escrito</div>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="pt-3">D.N.I.</label>
+                                <input class="form-control" type="text" name="dni" id="dni" placeholder="DNI" required>
+                                <div class="valid-feedback" id="DNICorrecto">El DNI es válido</div>
+                                <div class="invalid-feedback" id="DNIIncorrecto">El DNI no es válido</div>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="pt-3">DIRECCION</label>
+                                <input class="form-control" type="text" name="direccion" id="direccion" placeholder="C/ Rey de España" required>
+                                <div class="valid-feedback" id="DireccionCorrecto">La dirección es correcta</div>
+                                <div class="invalid-feedback" id="DireccionIncorrecto">La dirección es incorrecta</div>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="pt-3">Fecha Nacimiento</label>
+                                <input class="form-control" type="date" id="fechaNacimiento" name="fechaNacimiento" value="2018-07-22" min="1900-01-01" max="2030-12-31">
+                                <div class="valid-feedback" id="FechaCorrecto">La fecha es válida</div>
+                                <div class="invalid-feedback" id="FechaIncorrecto">La fecha no es válida</div>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="pt-3">Correo Electronico</label>
+                                <input class="form-control" type="email" name="email" id="email" placeholder="exampleemail@gmail.es" required>
+                                <div class="valid-feedback" id="EmailCorrecto">La dirección email es válida</div>
+                                <div class="invalid-feedback" id="EmailIncorrecto">La dirección email no es válida</div>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="pt-3">Telefono</label>
+                                <input class="form-control" type="text" name="telefono" id="telefono" placeholder="6389283" required>
+                                <div class="valid-feedback" id="TelefonoCorrecto">El teléfono es correcto</div>
+                                <div class="invalid-feedback" id="TelefonoIncorrecto">El teléfono no es correcto</div>
+                            </div>
+                            <div class="col-md-12" id="PerCreditCard">
+                                <label class="pt-3">Tarjeta de Crédito</label>
+                                <input class="form-control" type="text" name="tarjetaCredito" id="tarjetaCredito" placeholder="2763837993579348" required>
+                                <div class="valid-feedback" id="TarjetaCorrecto">El formato de la tarjeta de crédito es correcto</div>
+                                <div class="invalid-feedback" id="TarjetaIncorrecto">El formato de la tarjeta de crédito es incorrecto</div>
+                            </div>
+                            <div class="form-button mt-3">
+                                <button type="button" name="btnAltaCliente" id="btnAltaCliente" class="btn btn-primary">Alta Cliente</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>

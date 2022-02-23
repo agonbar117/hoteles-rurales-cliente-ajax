@@ -1,0 +1,28 @@
+<fieldset>
+    <div class="form form-body" id="divListarReservasHabitacion">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Listar reservas por habitación</h3>
+                        <p>Muestra las reservas asociadas a la habitacion seleccionada.</p>
+                        <form class="requires-validation" name="frmListarReservasHabitacion" novalidate>
+                            <div class="col-md-12">
+                                <label class="pt-3">Seleccionar habitación</label>
+                                <select class="form-select mt-3 selectHabitacion" id="selectListarReservasHabitacion" name="selectListarReservasHabitacion" required>
+                                    <option selected value="">Seleccione una habitación</option>
+                                </select>
+                                <div class="valid-feedback">Gracias por seleccionar una habitación</div>
+                                <div class="invalid-feedback">Por favor seleccione una habitación</div>
+                            </div>
+
+                            <div class="form-button mt-3">
+                                <button id="btnListarReservasHabitacion" type="button" class="btn btn-primary">Listar reservas</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</fieldset>

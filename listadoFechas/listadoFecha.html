@@ -1,0 +1,35 @@
+<fieldset>
+    <div class="form form-body" id="divListarEntreDosFechas">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Listar reservas entre dos fechas</h3>
+                        <p>Muestra las reservas cuya fecha de inicio o de fin se encuentre entre las dos fechas introducidas.</p>
+
+                        <form class="requires-validation" name="frmListarEntreDosFechas" id="frmListarEntreDosFechas" novalidate>
+                            <div class="col-md-6">
+                                <label class="pt-3">Fecha de inicio</label>
+                                <input class="form-control" type="date" id="fechaInicioLista" name="fechaInicioLista" value="2022-01-11" min="2018-01-01" max="2030-12-31">
+                                <div class="valid-feedback" id="FechaCorrecto">La fecha es válida</div>
+                                <div class="invalid-feedback" id="FechaIncorrecto">La fecha no es válida</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="pt-3">Fecha de fin</label>
+                                <input class="form-control" type="date" id="fechaFinLista" name="fechaFinLista" value="2022-12-31" min="2018-01-01" max="2030-12-31">
+                                <div class="valid-feedback" id="FechaCorrecto">La fecha es válida</div>
+                                <div class="invalid-feedback" id="FechaIncorrecto">La fecha no es válida</div>
+                            </div>
+
+                            <div class="form-button mt-3">
+                                <button type="button" name="btnListarEntreDosFechas" id="btnListarEntreDosFechas" class="btn btn-primary">Listar reservas</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</fieldset>

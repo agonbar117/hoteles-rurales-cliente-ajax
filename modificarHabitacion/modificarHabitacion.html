@@ -1,0 +1,49 @@
+<fieldset>
+    <div class="form form-body" id="divModificaHabitacion">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Modificar Habitacion</h3>
+                        <p>Modifica una habitacion al hotel.</p>
+                        <form class="requires-validation" name="frmModificaHabitacion" id="frmModificaHabitacion" novalidate>
+
+                            <div class="col-md-12">
+                                <label class="pt-3">Modificar Habitacion</label>
+                                <select class="form-select mt-3" id="selectModificaHabitacion" name="selectModificaHabitacion" required>
+                                    <option selected value="">Seleccione una Habitacion</option>
+                                </select>
+                                <div class="valid-feedback">Gracias por seleccionar una habitación</div>
+                                <div class="invalid-feedback">Por favor seleccione una habitación</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label class="pt-3">Nombre</label>
+                            <input class="form-control" type="text" name="nombreModificaHabitacion" id="nombreModificaHabitacion" placeholder="1º B" required>
+                            <div class="valid-feedback">Formato correcto</div>
+                            <div class="invalid-feedback">Formato incorrecto</div>
+                            </div> 
+                            <div class="col-md-12 mt-3">
+                                <label class="mb-3 mr-1" for="tipo">Tipo de habitación: </label>
+                                <select class="form-select" name="selectTipoHabitacionModificar" id="selectTipoHabitacionModificar" required>
+                                    <option value="">Seleccione un tipo de Habitación</option>
+                                </select>
+                                <div class="valid-feedback">Formato correcto</div>
+                                <div class="invalid-feedback">Formato incorrecto</div>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="pt-3">Precio</label>
+                            <input class="form-control" type="text" name="precioModificar" id="precioModificar" placeholder="1000.00" required>
+                            <div class="valid-feedback">El formato del precio es correcto</div>
+                            <div class="invalid-feedback">El formato del precio es incorrecto</div>
+                            </div>
+                            <div class="form-button mt-3">
+                                <button id="btnModificaHabitacion" type="button" class="btn btn-primary">Alta Habitación</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>
